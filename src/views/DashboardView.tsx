@@ -32,7 +32,7 @@ export default function DashboarView(){
                     <h2 className={`text-zinc-100 ${ studySpaces.length ? "text-2xl font-semibold" : "text-center" }`}>{ studySpaces.length ? "Tus espacios de estudio:" : "Aún no tienes espacios de estudio, comienza subiendo un documento." }</h2>
                     <div className="mt-10 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7">
                         {
-                            studySpaces.map( space => <CardEspacioTrabajo key={space.creationDate} cardStudySpace={space}/> )
+                            studySpaces.map( space => <CardEspacioTrabajo key={space.id} cardStudySpace={space}/> )
                         }
                     </div>
                 </main>

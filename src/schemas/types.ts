@@ -4,7 +4,8 @@ type CardStudySpace = {
     creationDate: string,
     fileName: string,
     numPage: number,
-    color: string
+    color: string,
+    id: string
 };
 
 export type { CardStudySpace };

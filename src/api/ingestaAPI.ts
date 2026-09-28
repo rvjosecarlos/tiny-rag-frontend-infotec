@@ -5,7 +5,6 @@ import { ResponseIngestaSchema } from "../schemas/responsesAPI";
 export const ingestarDocumento = async (formData: FormData) => {
     try{
         const url = `/api/ingesta`;
-        console.log({url});
         const result = await api.post(url, formData);
         const{ data, error } = ResponseIngestaSchema.safeParse(result.data);
         if( error ){
