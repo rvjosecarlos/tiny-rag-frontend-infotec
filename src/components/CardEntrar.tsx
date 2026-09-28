@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function CardEntrar(){
 
     return (
-        <div className="mx-2 lg:mx-auto lg:w-1/3 bg-zinc-800 border-zinc-600 border py-10 rounded-xl">
+        <div className="mx-2 md:mx-auto md:w-lg bg-zinc-800 border-zinc-600 border py-10 rounded-xl">
             <div className="p-3 bg-blue-900 rounded-xl w-fit m-auto">
                 <BookText className="text-blue-500"/>
             </div>

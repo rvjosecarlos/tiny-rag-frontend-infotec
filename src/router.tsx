@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import LayoutApp from "../layout/LayoutApp";
-import CardEntrar from "./components/CardEntrar";
-import CardEspacioTrabajo from "./components/CardEspacioTrabajo";
+import InicioView from "./views/InicioView";
+import DashboarView from "./views/DashboardView";
 
 
 export default function Router(){
     return (
         <Routes>
             <Route element={<LayoutApp />}>
-                <Route path="/"element={<CardEntrar />}/>
-                <Route path="/dashboard" element={<CardEspacioTrabajo />}/>
+                <Route path="/"element={<InicioView />}/>
+                <Route path="/dashboard" element={<DashboarView />}/>
             </Route>
         </Routes>
     );
