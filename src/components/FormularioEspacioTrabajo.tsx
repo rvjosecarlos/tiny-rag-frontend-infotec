@@ -45,7 +45,8 @@ export default function FormularioEspacioTrabajo({ setVisibleUploadForm, setStud
                 fileName: e.target.files[0].name,
                 numPage: data?.pdf.totalPages,
                 color: cardColor,
-                id: crypto.randomUUID()
+                id: crypto.randomUUID(),
+                user: user!.trim()
             } as CardStudySpace;
             const cardsString = localStorage.getItem("cards");
             const cardsStorage = cardsString ? JSON.parse(cardsString) as CardStudySpace[] : [];

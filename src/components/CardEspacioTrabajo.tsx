@@ -1,19 +1,28 @@
 import { Files, FileText } from "lucide-react";
 import type { CardStudySpace } from "../schemas/types";
 import { formatDate } from "../utils/formatDate";
+import { useNavigate } from "react-router-dom";
 
 type CardEspacioProps = {
     cardStudySpace: CardStudySpace
 };
 
 export default function CardEspacioTrabajo( { cardStudySpace }: CardEspacioProps ){
+    const navigate = useNavigate();
     // titulo, descripcion, datos del documento son variables, tambien la clase del color del div es variable
-    const { cardTitle, cardDescription, color, creationDate, fileName, numPage } = cardStudySpace;
+    const { cardTitle, cardDescription, color, creationDate, fileName, numPage, id } = cardStudySpace;
     const hover = `border-${color.replace("bg-", "")}`;
     console.log(hover);
 
+    const handleClickCard = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        navigate(`/chat/${id}`);
+    };
+
     return(
-        <div className={`flex w-full sm:w-60 border border-zinc-600 rounded-r-xl bg-zinc-800 hover:cursor-pointer hover:border-zinc-100 transform-border`}>
+        <div 
+            className={`flex w-full sm:w-60 border border-zinc-600 rounded-r-xl bg-zinc-800 hover:cursor-pointer hover:border-zinc-100 transform-border`}
+            onClick={handleClickCard}
+        >
             <div className={`w-4 ${color}`} />
             <div className="text-zinc-100 space-y-1 px-5 py-3 w-full">
                 <div className="flex justify-between items-center">
