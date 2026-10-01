@@ -9,7 +9,7 @@ export default function CardEntrar(){
                 <BookText className="text-blue-500"/>
             </div>
             <div className="text-center space-y-2">
-                <h1 className="text-2xl text-zinc-100 font-semibold">DocuStudy</h1>
+                <h1 className="text-2xl text-zinc-100 font-semibold">DocuStudy Sensei ⛩️</h1>
                 <p className="text-zinc-100 w-2/3 mx-auto">Sube tus documentos y conversa con ellos para estudiar mas rápido.</p>
             </div>
             <div className="text-center my-7">
