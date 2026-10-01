@@ -1,4 +1,4 @@
-# DocuStudy Sensei — Frontend
+# DocuStudy Sensei — Frontend (DEMO para el curso de Inteligencia artificial aplicada con Llama)
 
 DocuStudy Sensei es una aplicación de apoyo al estudio que permite cargar documentos PDF y conversar con su contenido. Este repositorio contiene el frontend web; el procesamiento de documentos y la recuperación de información se realizan mediante un backend independiente.
 
@@ -35,7 +35,7 @@ npm install
 Crea un archivo `.env` en la raíz del proyecto y define la URL base del backend:
 
 ```env
-VITE_BASE_URL=http://localhost:8000
+VITE_BASE_URL=http://localhost:8000/api
 ```
 
 Reemplaza el valor de ejemplo por la dirección donde se encuentre disponible el backend.
